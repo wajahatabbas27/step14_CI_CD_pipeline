@@ -1,0 +1,19 @@
+{
+  "version": "16.0.0",
+  "files": {
+    "30d5bf1e307a40ef3401506ec5878bfacd90e895d6efd6b448ae5fb64116d44a": {
+      "source": {
+        "path": "Step02CiCdPipelineUpdateCdkTemplateStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "30d5bf1e307a40ef3401506ec5878bfacd90e895d6efd6b448ae5fb64116d44a.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
